@@ -109,9 +109,9 @@ input[type=url] {
   display: inline
 }
 
-input[type=url]:focus {
+/*input[type=url]:focus {
   outline: none;
-}
+}*/
 
 
 .error {
@@ -146,3 +146,6 @@ input[type=url]:focus {
   clear: both;
 }
 
+input.ng-invalid {
+  outline-color: red;
+}
