@@ -9,6 +9,5 @@ angular.module('shortly.shorten', [])
         $scope.link.url = '';
       });
     }
-    // $scope.link.url = '';
   };
 });
