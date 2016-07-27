@@ -1,14 +1,12 @@
 <div id='container'>
-<!-- Your code here -->
-<nav> 
-    <a href="#/links">Links</a>   
-    <a href="#/shorten">Shorten</a>
-</nav>
-<form name="shortenForm" ng-submit="addLink(shortenForm.$valid)" id="shorten" novalidate>
-  <input type="url" ng-model="link.url" placeholder="input link" required>
-  <button type="submit" form="shorten">Submit</button>
-</form>
- 
+  <nav> 
+      <a href="#/links">Links</a>   
+      <a href="#/shorten">Shorten</a>
+  </nav>
+  <form name="shortenForm" ng-submit="addLink(shortenForm.$valid)" id="shorten" novalidate>
+    <input type="url" ng-model="link.url" placeholder="input link" required>
+    <button type="submit" form="shorten">Submit</button>
+  </form>
 </div>
 
 

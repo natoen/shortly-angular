@@ -3,7 +3,6 @@ angular.module('shortly', [
   'shortly.links',
   'shortly.shorten',
   'shortly.auth',
-  'ngRoute',
   'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
@@ -33,9 +32,9 @@ angular.module('shortly', [
       authenticate: true
     });
 
-    // We add our $httpInterceptor into the array
-    // of interceptors. Think of it like middleware for your ajax calls
-    $httpProvider.interceptors.push('AttachTokens');
+  // We add our $httpInterceptor into the array
+  // of interceptors. Think of it like middleware for your ajax calls
+  $httpProvider.interceptors.push('AttachTokens');
 })
 .factory('AttachTokens', function ($window) {
   // this is an $httpInterceptor

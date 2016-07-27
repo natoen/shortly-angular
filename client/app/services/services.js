@@ -1,7 +1,6 @@
 angular.module('shortly.services', [])
 
 .factory('Links', function ($http) {
-  // Your code here
   var getAll = function () {
     return $http({
       method: 'GET',
@@ -30,8 +29,8 @@ angular.module('shortly.services', [])
     addOne: addOne
   };
 })
+
 .factory('Auth', function ($http, $location, $window) {
-  // Don't touch this Auth service!!!
   // it is responsible for authenticating our user
   // by exchanging the user's username and password
   // for a JWT from the server
